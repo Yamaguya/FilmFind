@@ -10,6 +10,7 @@ public:
 	void draw() override;
 	void next();
 	void previous();
+	bool getFullscreen();
 	bool sizeAdjust();
 	ScreencapPreview(std::list<std::string> screens);
 	ScreencapPreview();

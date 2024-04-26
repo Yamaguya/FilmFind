@@ -27,7 +27,6 @@ class Browser
 	static Browser* m_instance;
 
 	std::list<Thumbnail*> m_thumbs;
-	std::list<ScreencapPreview*> m_screens;
 	std::list<std::list<Tag*>> m_tags;
 	std::list<Button*> genreButtons;
 	std::list<Button*> decadeButtons;
@@ -36,6 +35,7 @@ class Browser
 	std::list<Film*> films;
 	std::list<FilmDetails*> m_details;
 	std::string thumbName;
+	std::list<ScreencapPreview*> m_screens;
 
 	Button* leftButton;
 	Button* rightButton;

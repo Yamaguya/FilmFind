@@ -23,6 +23,11 @@ void ScreencapPreview::previous()
 	screencaps.pop_back();
 }
 
+bool ScreencapPreview::getFullscreen()
+{
+	return this->fullscreen;
+}
+
 bool ScreencapPreview::sizeAdjust()
 {
 	if (!fullscreen)

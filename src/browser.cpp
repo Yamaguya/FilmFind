@@ -12,42 +12,48 @@ void Browser::draw()
 	br.texture = std::string(ASSET_PATH) + "bg.png";
 	graphics::drawRect(CANVAS_WIDTH / 2, CANVAS_HEIGHT / 2, CANVAS_WIDTH, CANVAS_HEIGHT, br); // Draw background
 	
-	leftButton->draw();
-	rightButton->draw();
-	navbar->draw();
-
-	if (!datebar->getHover()) // Draw Decade bar
-		datebar->draw();
-	else
+	m_screens.front()->draw(); 
+	
+	if (m_screens.front()->getFullscreen() == false)
 	{
-		datebar->draw(decades);
-		for (auto d : decadeButtons)
+		leftButton->draw();
+		rightButton->draw();
+		navbar->draw();
+
+		if (!datebar->getHover()) // Draw Decade bar
+			datebar->draw();
+		else
 		{
-			d->draw(d->getName());
+			datebar->draw(decades);
+			for (auto d : decadeButtons)
+			{
+				d->draw(d->getName());
+			}
 		}
-	}
 
-	if (!genrebar->getHover()) // Draw Genre bar
-		genrebar->draw();
-	else 
-	{
-		genrebar->draw(genres);
-		for (auto b : genreButtons)
+		if (!genrebar->getHover()) // Draw Genre bar
+			genrebar->draw();
+		else
 		{
-			b->draw(b->getName());
+			genrebar->draw(genres);
+			for (auto b : genreButtons)
+			{
+				b->draw(b->getName());
+			}
 		}
-	}
 
-	search->draw();
-	searchIn->draw();
-	searchBut->draw();
+		search->draw();
+		searchIn->draw();
+		searchBut->draw();
 
-	m_thumbs.front()->draw();
-	m_details.front()->draw();
-	m_screens.front()->draw();
-	for (auto t : m_tags.front())
-	{
-		t->draw();
+		m_thumbs.front()->draw();
+		m_details.front()->draw();
+
+		for (auto t : m_tags.front())
+		{
+			t->draw();
+		}
+
 	}
 }
 
@@ -82,14 +88,14 @@ void Browser::filterTitle(std::string filter)
 		m_thumbs.push_front(m_thumbs.back());
 		m_thumbs.pop_back();
 
-		m_screens.push_front(m_screens.back());
-		m_screens.pop_back();
-
 		m_tags.push_front(m_tags.back());
 		m_tags.pop_back();
 
 		m_details.push_front(m_details.back());
 		m_details.pop_back();
+
+		m_screens.push_front(m_screens.back());
+		m_screens.pop_back();
 
 		lowerFilm = films.front()->getTitle();
 		std::transform(lowerFilm.begin(), lowerFilm.end(), lowerFilm.begin(), ::tolower);
@@ -126,7 +132,6 @@ void Browser::filterGenre(std::string filter)
 		m_details.pop_back();
 	}
 }
-
 
 void Browser::filterDate(std::string filter)
 {
@@ -369,15 +374,8 @@ void Browser::init()
 		t->setWidth(200);
 		t->setHeight(320);
 		m_thumbs.push_back(t);
-		
-		ScreencapPreview* sc = new ScreencapPreview(film->getScreencaps()); // Initialize screencaps
-		sc->setPosX(CANVAS_WIDTH * 0.8);
-		sc->setPosY(CANVAS_HEIGHT * 0.8);
-		sc->setWidth(CANVAS_WIDTH * 0.18);
-		sc->setHeight((CANVAS_WIDTH * 0.18) * 0.67);
-		m_screens.push_back(sc);
 
-		FilmDetails* md = new FilmDetails(film->getTitle(), film->getDirector(), film->getActors(), film->getYear(), film->getDesc()); // Initialize screencaps
+		FilmDetails* md = new FilmDetails(film->getTitle(), film->getDirector(), film->getActors(), film->getYear(), film->getDesc()); // Initialize details
 		md->setPosX(t->getPosX() + t->getWidth());
 		md->setPosY(t->getPosY() - (t->getHeight()/2));
 		md->setWidth(t->getWidth());
@@ -418,6 +416,13 @@ void Browser::init()
 		m_tags.push_back(tagList);
 		tags.clear(); // Clear lists for next film
 		tagList.clear();
+
+		ScreencapPreview* sc = new ScreencapPreview(film->getScreencaps()); // Initialize screencaps
+		sc->setPosX(CANVAS_WIDTH * 0.8);
+		sc->setPosY(CANVAS_HEIGHT * 0.8);
+		sc->setWidth(CANVAS_WIDTH * 0.18);
+		sc->setHeight((CANVAS_WIDTH * 0.18) * 0.67);
+		m_screens.push_back(sc);
 	}
 
 	Button* lbutton = new Button(); // Initialize left button

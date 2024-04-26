@@ -1,5 +1,8 @@
+x64/
+
 *.vs
 
+*.obj
 # Prerequisites
 *.d
 

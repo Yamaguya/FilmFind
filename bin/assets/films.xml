@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<collection>
+
+<film title="Criss Cross" directors="Robert Siodmak" actors="Burt Lancaster, Yvonne De Carlo, Dan Duryea" genre="Crime, Drama" year="1949" thumbnail="criss-cross.png" description="Burt Lancaster plays Steve Thompson, a man who seals his dark fate when he returns to Los Angeles to find his ex-wife Anna Dundee (Yvonne DeCarlo) eager to rekindle their love against all better judgement. She encourages their affair but then quickly marries mobster Slim Dundee (Dan Duryea). To deflect suspicion of the affair, Steve Thompson leads Dundee into a daylight armored-truck robbery."> 
+	<shot image="criss-cross-1.png"/> 
+	<shot image="criss-cross-2.png"/> 
+	<shot image="criss-cross-3.png"/> 
+</film>
+
+<film title="Cure" directors="Kiyoshi Kurosawa" actors="Masato Hagiwara, Kôji Yakusho, Tsuyoshi Ujiki" genre="Horror, Mystery, Crime, Thriller" year="1997" thumbnail="cure.png" description="A wave of gruesome murders is sweeping Tokyo. The only connection is a bloody X carved into the neck of each of the victims. In each case, the murderer is found near the victim and remembers nothing of the crime. Detective Takabe and psychologist Sakuma are called in to figure out the connection, but their investigation goes nowhere…"> 
+	<shot image="cure-1.png"/> 
+	<shot image="cure-2.png"/> 
+	<shot image="cure-3.png"/> 
+</film>
+
+<film title="Eraserhead" directors="David Lynch" actors="Jack Nance, Charlotte Stewart, Allen Joseph" genre="Fantasy, Horror" year="1977" thumbnail="eraserhead.png" description="Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child."> 
+	<shot image="days-of-being-wild-1.png"/> 
+	<shot image="days-of-being-wild-2.png"/> 
+	<shot image="days-of-being-wild-3.png"/> 
+</film>
+
+<film title="Empire of the Sun" directors="Steven Spielberg" actors="Christian Bale, John Malkovich, Miranda Richardson" genre="History, War, Drama" year="1987" thumbnail="empire-of-the-sun.png" description="Jamie Graham, a privileged English boy, is living in Shanghai when the Japanese invade and force all foreigners into prison camps. Jamie is captured with an American sailor named Basie, who looks out for him while they are in the camp together. Even though he is separated from his parents and in a hostile environment, Jamie maintains his dignity and youthful spirits, providing a beacon of hope for the others held captive with him.">
+	<shot image="empire-of-the-sun-1.png"/> 
+	<shot image="empire-of-the-sun-2.png"/> 
+	<shot image="empire-of-the-sun-3.png"/> 
+</film>
+
+<film title="Eyes Wide Shut" directors="Stanley Kubrick" actors="Tom Cruise, Nicole Kidman, Sydney Pollack" genre="Thriller, Drama, Mystery" year="1999" thumbnail="eyes-wide-shut.png" description="After Dr. Bill Harford’s wife, Alice, admits to having sexual fantasies about a man she met, Bill becomes obsessed with having a sexual encounter. He discovers an underground sexual group and attends one of their meetings – and quickly discovers that he is in over his head.">
+	<shot image="eyes-wide-shut-1.png"/> 
+	<shot image="eyes-wide-shut-2.png"/> 
+	<shot image="eyes-wide-shut-3.png"/> 
+</film>
+
+<film title="Five Easy Pieces" directors="Bob Rafelson" actors="Jack Nicholson, Karen Black, Susan Anspach" genre="Drama" year="1970" thumbnail="five-easy-pieces.png" description="A drop-out from upper-class America picks up work along the way on oil-rigs when his life isn’t spent in a squalid succession of bars, motels, and other points of interest.">
+	<shot image="five-easy-pieces-1.png"/> 
+	<shot image="five-easy-pieces-2.png"/> 
+	<shot image="five-easy-pieces-3.png"/>
+</film>
+
+<film title="Harakiri" directors="Masaki Kobayashi" actors="Tatsuya Nakadai, Akira Ishihama, Shima Iwashita" genre="Drama" year="1962" thumbnail="harakiri.png" description="Down-on-his-luck veteran Tsugumo Hanshirō enters the courtyard of the prosperous House of Iyi. Unemployed, and with no family, he hopes to find a place to commit seppuku—and a worthy second to deliver the coup de grâce in his suicide ritual. The senior counselor for the Iyi clan questions the ronin’s resolve and integrity, suspecting Hanshirō of seeking charity rather than an honorable end. What follows is a pair of interlocking stories which lay bare the difference between honor and respect, and promises to examine the legendary foundations of the Samurai code.">
+	<shot image="harakiri-1.png"/> 
+	<shot image="harakiri-2.png"/> 
+	<shot image="harakiri-3.png"/>
+</film>
+
+<film title="Paris, Texas" directors="Wim Wenders" actors="Harry Dean Stanton, Nastassja Kinski, Dean Stockwell" genre="Drama" year="1984" thumbnail="paris-texas.png" description="A man wanders out of the desert not knowing who he is. His brother finds him, and helps to pull his memory back of the life he led before he walked out on his family and disappeared four years earlier.">
+	<shot image="paris-texas-1.png"/> 
+	<shot image="paris-texas-2.png"/> 
+	<shot image="paris-texas-3.png"/> 
+</film>
+
+<film title="Shane" directors="George Stevens" actors="Alan Ladd, Jean Arthur, Van Heflin" genre="Western, Drama" year="1953" thumbnail="shane.png" description="A weary gunfighter attempts to settle down with a homestead family, but a smouldering settler and rancher conflict forces him to act." >
+	<shot image="shane-1.png"/> 
+	<shot image="shane-2.png"/> 
+	<shot image="shane-3.png"/>
+</film>
+
+<film title="Shotgun Stories" directors="Jeff Nichols" actors="Michael Shannon, Douglas Ligon, Barlow Jacobs" genre="Thriller, Drama" year="2007" thumbnail="shotgun-stories.png" description="Shotgun Stories tracks a feud that erupts between two sets of half brothers following the death of their father. Set against the cotton fields and back roads of Southeast Arkansas, these brothers discover the lengths to which each will go to protect their family.">
+	<shot image="shotgun-stories-1.png"/> 
+	<shot image="shotgun-stories-2.png"/> 
+	<shot image="shotgun-stories-3.png"/> 
+</film>
+
+<film title="The Night of the Hunter" directors="Robert Mitchum, Shelley Winters, Lillian Gish" genre="Drama, Thriller, Crime" year="1955" thumbnail="the-night-of-the-hunter.png" description="In the Deep South, a serial-killing preacher hunts two young children who know the whereabouts of a stash of money.">
+	<shot image="the-night-of-the-hunter-1.png"/> 
+	<shot image="the-night-of-the-hunter-2.png"/> 
+	<shot image="the-night-of-the-hunter-3.png"/> 
+</film>
+
+<film title="Withnail and I" directors="Bruce Robinson" actors="Richard E. Grant, Paul McGann, Richard Griffiths" genre="Drama, Comedy" year="1987" thumbnail="withnail-and-i.png" description="Two out-of-work actors – the anxious, luckless Marwood and his acerbic, alcoholic friend, Withnail – spend their days drifting between their squalid flat, the unemployment office and the pub. When they take a holiday “by mistake” at the country house of Withnail’s flamboyantly gay uncle, Monty, they encounter the unpleasant side of the English countryside: tedium, terrifying locals and torrential rain.">
+	<shot image="withnail-and-i-1.png"/> 
+	<shot image="withnail-and-i-2.png"/> 
+	<shot image="withnail-and-i-3.png"/> 
+</film>
+
+</collection>

@@ -21,52 +21,62 @@
 #include <set>
 #include <algorithm>
 #include <windows.h>
+#include <memory>
+#include <thread>
+#include <future>
+#include <mutex>
+#include <condition_variable>
 
-class Browser
-{
-	static Browser* m_instance;
 
-	std::list<Thumbnail*> m_thumbs;
-	std::list<std::list<Tag*>> m_tags;
-	std::list<Button*> genreButtons;
-	std::list<Button*> decadeButtons;
-	std::set<std::string> genres;
-	std::set<std::string> decades;
-	std::list<Film*> films;
-	std::list<FilmDetails*> m_details;
-	std::string thumbName;
-	std::list<ScreencapPreview*> m_screens;
+class Browser {
+    static std::unique_ptr<Browser> m_instance;
+    static std::once_flag initInstanceFlag;
+    Browser();
 
-	Button* leftButton;
-	Button* rightButton;
-	Navbar* navbar;
-	DateBar* datebar;
-	GenreBar* genrebar;
-	SearchBar* search;
-	SearchInput* searchIn;
-	SearchButton* searchBut;
-	Button* genreButton;
-	Button* decadeButton;
-	Tag* tag;
+    void drawBackground();
+    void drawUIComponents();
+    void drawBars();
+    void drawTags();
+    void drawScreens();
 
-	bool caps = false;
-	bool searchInput = false; // If true then it starts registering the typing
+    // Other member variables
+    std::list<Thumbnail*> m_thumbs;
+    std::list<std::list<Tag*>> m_tags;
+    std::list<Button*> genreButtons;
+    std::list<Button*> decadeButtons;
+    std::set<std::string> genres;
+    std::set<std::string> decades;
+    std::list<Film*> films;
+    std::list<FilmDetails*> m_details;
+    std::string thumbName;
+    std::list<ScreencapPreview*> m_screens;
+    Button* leftButton;
+    Button* rightButton;
+    Navbar* navbar;
+    DateBar* datebar;
+    GenreBar* genrebar;
+    SearchBar* search;
+    SearchInput* searchIn;
+    SearchButton* searchBut;
+    Button* genreButton;
+    Button* decadeButton;
+    Tag* tag;
 
-	std::list<Tag*> tagList;
-	std::list<std::string> tags;
+    bool caps = false;
+    bool searchInput = false; // If true then it starts registering the typing
 
-	Browser() {}
+    std::list<Tag*> tagList;
+    std::list<std::string> tags;
+
 public:
-	void draw();
-	bool mouseHover(float leftx, float rightx, float topy, float boty);
-	void filterTitle(std::string filter);
-	void filterGenre(std::string filter);
-	void filterDate(std::string filter);
-	void keyReg();
-	void update();
-	void init();
-
-	~Browser();
-
-	static Browser* getInstance();
+    static Browser* getInstance();
+    void draw();
+    void update();
+    void init();
+    bool mouseHover(float leftx, float rightx, float topy, float boty);
+    void filterTitle(const std::string& filter);
+    void filterGenre(const std::string& filter);
+    void filterDate(const std::string& filter);
+    void keyReg();
+    ~Browser();
 };
